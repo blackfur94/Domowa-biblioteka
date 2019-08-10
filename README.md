@@ -12,9 +12,9 @@ Aplikacja webowa umożliwiająca zarządzanie domową biblioteką.
 - Maven
 
 # Zrzuty ekranu
-#1
+
 ![Alt text](/screenshots/3.JPG?raw=true "Optional Title")
-#2
+# 
 ![Alt text](/screenshots/1.JPG?raw=true "Optional Title")
-#3
+# 
 ![Alt text](/screenshots/2.JPG?raw=true "Optional Title")
