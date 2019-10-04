@@ -10,6 +10,8 @@ Aplikacja webowa umożliwiająca zarządzanie domową biblioteką.
 - Thymeleaf
 - Bootstrap
 - Maven
+- JUnit
+- Mockito
 
 # Zrzuty ekranu
 
