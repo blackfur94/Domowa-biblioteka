@@ -11,6 +11,7 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
+import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Size;
 
 @Entity
@@ -24,22 +25,22 @@ public class Book {
 	
 	
 	@Column(name="title")
-	@Size(min=1, message="Tytuł nie może być pusty")
+	@NotEmpty(message="Tytuł nie może być pusty")
 	private String title;
 	
-	@Size(min=1, message="Autor nie może być pusty")
+	@NotEmpty(message="Autor nie może być pusty")
 	@Column(name="author")
 	private String author;
 	
-	@Min(1)
+	@Min(value = 1000, message="Rok wydania musi być pózniejszy niż 1000")
 	@Column(name="release_year")
 	private int releaseYear;
 	
-	@Size(min=1, message="Gatunek nie może być pusty")
+	@NotEmpty(message="Gatunek nie może być pusty")
 	@Column(name="genre")
 	private String genre;
 	
-	@Min(1)
+	@Min(value = 1, message="Minimalna ilość stron to 1")
 	@Column(name="pages")
 	private int pages;
 	

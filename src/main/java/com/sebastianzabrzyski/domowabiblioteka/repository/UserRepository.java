@@ -6,9 +6,6 @@ import com.sebastianzabrzyski.domowabiblioteka.model.User;
 
 public interface UserRepository extends JpaRepository <User, Integer> {
 	
-	User getUserByUsername(String username);
-	
-	User findByUsername(String email);
-	
+	User findByUsername(String username);
 	
 }

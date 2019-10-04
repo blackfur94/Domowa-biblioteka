@@ -17,12 +17,6 @@ public class BookServiceImpl implements BookService {
 	private BookRepository bookRepository;
 
 	@Override
-	public List<Book> findAllOfUser(User user) {
-
-		return null;
-	}
-
-	@Override
 	public Optional<Book> findById(int bookId) {
         return bookRepository.findById(bookId);
 	}

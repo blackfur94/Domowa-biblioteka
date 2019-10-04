@@ -17,9 +17,13 @@ import com.sebastianzabrzyski.domowabiblioteka.service.UserService;
 @Controller
 public class UserController {
 	
-	@Autowired
 	private UserService userService;
-	
+
+	@Autowired
+	public UserController(UserService userService) {
+		this.userService = userService;
+	}
+
 	@ModelAttribute("user")
 	public UserRegistrationDto userRegistrationDto() {
 		return new UserRegistrationDto();
